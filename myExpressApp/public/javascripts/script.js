@@ -1,6 +1,6 @@
 const { findLastKey } = require("lodash");
 
-document.getElementById("http://127.0.0.1:8000/").disabled = true;
+document.getElementById("https://felixcorderojr.azurewebsites.net/").disabled = true;
 
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
