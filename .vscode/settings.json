@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/60e71b17-18b8-44ea-82ef-4e383e71d98a/resourceGroups/felixcorderojr_group/subscriptions/60e71b17-18b8-44ea-82ef-4e383e71d98a/resourceGroups/felixcorderojr_group/providers/Microsoft.Web/sites/felixcorderojr",
+    "appService.deploySubpath": "myExpressApp"
+}
