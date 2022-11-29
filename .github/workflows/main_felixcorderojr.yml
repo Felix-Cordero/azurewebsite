@@ -49,7 +49,7 @@ jobs:
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
-        with:
+        with: 
           app-name: 'felixcorderojr'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0813903D22B54680A0D1EA2E8CEA0C2A }}
