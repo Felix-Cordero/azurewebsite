@@ -1,8 +1,8 @@
 /*
 
-Ultra Profile
+Felix Cordero Jr.
 
-https://templatemo.com/tm-464-ultra-profile
+https://webdev.felix-z.com
 
 */
 
@@ -80,7 +80,7 @@ hr {
 /* END NAVIGATION */
 
 /* START HOME */
-.templatemo-home {
+.felix-home {
   background: url('../images/home-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -407,7 +407,7 @@ input { height: 50px; }
 /* END CONTACT */
 
 @media screen and (max-device-width: 1024px){
-  .templatemo-home {
+  .felix-home {
     background-attachment: scroll;
   }
 }
