@@ -12,9 +12,9 @@ jobs:
  		- uses: actions/checkout@v2
  		- uses: actions/setup-node@v1
  				with:
- 				node-vwerion: 12
+ 				node-vwerion: 16
  				regitry-url: https//npm.pkg.github.com/
- 				scope: '@azurewebsite'
+ 				scope: ${{ github.repository_owner}}
  			- run: npm install
  			- run: npm publish
  				env:
