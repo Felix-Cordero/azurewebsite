@@ -1,14 +1,21 @@
-name: Pull request labeler
-on: [ pull_request_target ]
+name: Node.js Package
 
-permissions:
-  contents: read
-  pull-requests: write
+on:
+	push:
+		branches:
+			- master
 
 jobs:
-  triage:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/labeler@v4
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+ 	publish-gpr:
+ 		runs-on: ubuntu-latest
+ 		steps:
+ 		- uses: actions/checkout@v2
+ 		- uses: actions/setup-node@v1
+ 				with:
+ 				node-vwerion: 12
+ 				regitry-url: https//npm.pkg.github.com/
+ 				scope: '@azurewebsite'
+ 			- run: npm install
+ 			- run: npm publish
+ 				env:
+ 					NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
